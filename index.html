@@ -197,20 +197,12 @@
             justify-content: center;
         }
 
-        .image-placeholder {
+        .profile-image {
             width: 280px;
             height: 280px;
-            background: var(--green-light);
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            object-fit: cover;
             border: 4px solid var(--green-primary);
-        }
-
-        .image-placeholder span {
-            font-size: 4rem;
-            color: var(--green-primary);
         }
 
         /* Què sé fer Section */
@@ -302,6 +294,15 @@
             width: 20px;
             height: 20px;
             stroke: var(--green-primary);
+        }
+
+        a.contact-item {
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        a.contact-item:hover {
+            color: var(--green-primary);
         }
 
         .contact-form {
@@ -464,9 +465,7 @@
                     </p>
                 </div>
                 <div class="about-image">
-                    <div class="image-placeholder">
-                        <span>L</span>
-                    </div>
+                    <img src="LauraSole.png" alt="Laura Solé Garcia" class="profile-image">
                 </div>
             </div>
         </div>
@@ -532,12 +531,12 @@
                             </svg>
                             <span>Barcelona, Catalunya</span>
                         </div>
-                        <div class="contact-item">
+                        <a href="https://www.linkedin.com/in/laura-sol%C3%A9-garcia-222a2a44/" target="_blank" rel="noopener noreferrer" class="contact-item">
                             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
                                 <path stroke-linecap="round" stroke-linejoin="round" d="M13.19 8.688a4.5 4.5 0 011.242 7.244l-4.5 4.5a4.5 4.5 0 01-6.364-6.364l1.757-1.757m13.35-.622l1.757-1.757a4.5 4.5 0 00-6.364-6.364l-4.5 4.5a4.5 4.5 0 001.242 7.244" />
                             </svg>
-                            <span>linkedin.com/in/laura</span>
-                        </div>
+                            <span>LinkedIn</span>
+                        </a>
                     </div>
                 </div>
                 <form class="contact-form">
